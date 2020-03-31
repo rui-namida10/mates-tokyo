@@ -1,0 +1,450 @@
+
+*, *::before, *::after {
+    /* すごい重要！！ */
+    box-sizing: border-box;
+  }
+html {
+  background-color: #000000;
+}
+
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/*
+section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+*/
+
+  
+/* ***** common ***** */
+
+.wrap {
+    overflow: hidden;
+    }
+
+
+
+section{
+    margin: 120px auto;
+    max-width:800px;
+}
+
+section h2 {
+    padding:  40px auto 40px auto;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 80px;
+    }
+  
+#mtitle {
+  height: 100vh;
+  background-image: url(/Users/takiguchirui/Desktop/projects/svg.practice/images/wow.jpg);
+  background-size: cover;
+  background-repeat:  no-repeat;
+  background-position: top;
+  
+}
+
+ 
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 auto;
+    align-items: center;
+    color: #ffffff;
+    }
+    
+#wrapper nav ul li{
+    display:inline-block;
+    font-size: 20px;
+    padding:  30px 20px 25px 28px;
+    }
+  
+
+#gnav li {
+    padding: 27px 25px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .3s ease all;
+}
+
+#gnav {
+    padding: 10px;
+    font-family: 'Aemstel', serif;
+    z-index: 100;
+    font-size: 20px;
+}
+
+#gnav ul {
+    padding-left: 0;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* --- scroll --- */
+
+/* --- scroll --- */
+
+/* --- svg --- */
+#theme {
+    margin: 60px auto;
+    width: 80%;
+    stroke:lightslategray; 
+    stroke-width:0.5px; 
+    fill:transparent; 
+    stroke-dasharray:1425px; 
+    stroke-dashoffset:1425px; 
+    animation:anim 3s ease-in 1s forwards;
+}
+@keyframes anim {
+0%{stroke-dashoffset:1425px;}
+30%{fill:transparent;}
+60%{stroke-dashoffset:0;}
+100%{stroke-dashoffset:0; fill:#fff;}
+}
+
+.sp-title {
+    display: none;
+}
+/* --- svg --- */
+
+
+
+/* --- about --- */
+
+
+#about{
+    text-align: left;
+}
+
+/* --- about --- */
+
+/* --- service --- */
+#service{
+    text-align: right;
+}
+/* --- service --- */
+
+/* --- works --- */
+.work-contents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#works {
+    padding-top: 80px;
+    text-align: left;
+}
+
+.work-img {
+    width: 50%;
+    padding: 20px;
+}
+.work-img img {
+    width: 100%;
+}
+
+.work-text {
+    width: 50%;
+}
+/* --- works --- */
+
+/* --- company --- */
+.company-contents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#company {
+    padding-top: 80px;
+    text-align: left;
+}
+
+.company-img {
+    width: 50%;
+    padding: 20px;
+}
+.company-img img {
+    width: 100%;
+}
+
+.company-text {
+    width: 50%;
+}
+
+/* --- company --- */
+/* --- form --- */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:500px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: 'M PLUS Rounded 1c', sans-serif, Arial, Helvetica, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 8px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.short-input {
+  color:white;
+  font-family: 'M PLUS Rounded 1c', sans-serif, Arial, Helvetica, sans-serif;
+  font-weight:500;
+  font-size: 16px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 8px;
+  margin-bottom: 15px;
+  width:40%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top: 10px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+form span {
+  font-family: 'M PLUS Rounded 1c', sans-serif, Arial, Helvetica, sans-serif;
+  line-height: 40px; 
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+/* --- form --- */
+/* ***** common ***** */ 
+
+
+
+/* ***** tablet ***** */
+
+@media screen and (max-width: 896px){
+#theme {
+  width: 100%;
+  margin-top: 140px;
+  }
+
+#gnav li {
+    font-size: 14px;
+    padding: 17px 17px;
+    }
+
+
+header .gnav li.nowPosition {
+    padding-top: 23px;
+}
+}
+
+/* ***** tablet ***** */ 
+/* ***** smart phone ***** */ 
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 93%; 
+    }
+
+  /* --- humburger menu --- */ 
+    #wrapper nav {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        padding-top: 50px;
+        background:#333;
+        font-size: 16px;
+        box-sizing: border-box;
+        z-index: 2
+    }
+    #wrapper nav ul li {
+        display:block;
+        padding: 20px 28px
+    }
+    #wrapper nav ul li a {
+        text-decoration: none;
+        color: #ddd
+    }
+    #wrapper .btn-gnav {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper .btn-gnav span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 400ms;
+        transition: all 400ms
+    }
+    #wrapper .btn-gnav span:nth-child(1) {
+        top: 0
+    }
+    #wrapper .btn-gnav span:nth-child(2) {
+        top: 10px
+    }
+    #wrapper .btn-gnav span:nth-child(3) {
+        top: 20px
+    }
+    #wrapper .btn-gnav.open span {
+        background: #fff
+    }
+    #wrapper .btn-gnav.open span {
+        width: 24px;
+    }
+    #wrapper .contents section p {
+        position: absolute;
+        top: 50%;
+        width: 30%;
+        line-height: 1.4;
+        font-size: 20px;
+        color: #fff;
+    }
+    #wrapper .contents section:nth-child(odd) p {
+        left: 10%
+    }
+    #wrapper .contents section:nth-child(even) p {
+        right: 10%
+    }
+
+    /* --- title --- */
+
+    .main-title {
+        display: none;
+    }
+
+    .sp-title {
+        display: block;
+    }
+    /* --- title --- */
+
+    /* --- form --- */
+
+    form { max-width:370px; margin:50px auto; }
+
+    form span {
+      font-family: 'M PLUS Rounded 1c', sans-serif, Arial, Helvetica, sans-serif;
+      line-height: 50px; 
+      font-size: 16px;
+      letter-spacing: 0.6px;
+    }
+    /* --- form --- */
+
+    /* --- works --- */
+    .work-contents {
+        flex-direction: column;
+    }
+
+    .work-img {
+        width: auto;
+        padding: 20px;
+    } 
+    .work-img img {
+        width: 100%;
+    } 
+
+    .work-text {
+        width: auto;
+    }
+
+    /* --- works --- */
+    /* --- company --- */
+    .company-contents {
+        flex-direction: column;
+    }
+
+    .company-img {
+        width: auto;
+        padding: 20px;
+    } 
+    .company-img img {
+        width: 100%;
+    } 
+
+    .company-text {
+        width: auto;
+    }
+
+    /* --- works --- */
+
+    /* --- humburger menu --- */
+}
+
+/* ***** smart phone ***** */ 
+
+/* #gnav  {
+    display: none;
+    } */
+
+
+
